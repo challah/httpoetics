@@ -104,21 +104,30 @@ p {
 
 // SIGN STYLES
 .signs {
+  margin: auto;
   display: flex;
-  flex-direction: column; // Change this line
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
+  width: 100%; // Set the initial width to 100% for mobile screens
+
+  @media (min-width: 800px) { // Adjust this value as needed
+    max-width: 70%;
+    min-width: 800px;
+    padding: 1rem; // Increase the padding on larger screens
+  }
 
   .sign {
-    padding: 1rem;
+    padding: 0.5rem;
     font-family: $header;
     text-align: center;
     font-size: 2rem;
-    // display: flex;
-    // flex-direction: column;
-    max-width: 70%;
-    min-width: 50%;
+    width: 100%; // This will make the .sign divs fill the full width of the .signs container
+
+    @media (min-width: 800px) { // Adjust this value as needed
+      padding: 1rem; // Increase the padding on larger screens
+    }
 
     .sign-text:nth-child(1) {
       color: $orange;
