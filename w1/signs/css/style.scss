@@ -154,6 +154,9 @@ p {
 .pulsating-text {
   animation: pulsate 1.5s infinite ease-in-out;
   display: inline-block; /* or block */
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 }
 
 @keyframes spinY {
@@ -170,6 +173,9 @@ p {
   display: inline-block;
   color: white;
   margin: 0 auto; 
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 }
 
 .fire-divider {

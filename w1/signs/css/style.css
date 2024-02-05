@@ -126,6 +126,11 @@ p {
   display: inline-block;
   /* or block */
 }
+@media (prefers-reduced-motion: reduce) {
+  .pulsating-text {
+    animation: none;
+  }
+}
 
 @keyframes spinY {
   0% {
@@ -140,6 +145,11 @@ p {
   display: inline-block;
   color: white;
   margin: 0 auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  .spinning-y-axis {
+    animation: none;
+  }
 }
 
 .fire-divider {
