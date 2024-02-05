@@ -137,7 +137,7 @@ function updateInventory() {
 
       let imgCell = document.createElement('td');
       let img = document.createElement('img');
-      img.src = '/assets/' + item.img;
+      img.src = '../../assets/' + item.img;
       // img.width = 50;
       // check if image's height or width is greater than 50
       if (img.height > img.width) {
