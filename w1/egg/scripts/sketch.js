@@ -6,7 +6,8 @@ function preload() {
 }
 
 function setup() {
-  let canvas = createCanvas(400, 400, WEBGL);
+  let canvasWidth = windowWidth < 570 ? windowWidth * 0.7 : 400;
+  let canvas = createCanvas(canvasWidth, 400, WEBGL);
   canvas.parent('p5-container');
 }
 
