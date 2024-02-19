@@ -12,7 +12,7 @@ originalItems.forEach(item => {
 
 originalItems.forEach(item => {
   let imgElement = document.createElement('img');
-  imgElement.src = '../../assets/' + item.img;
+  imgElement.src = '../../assets/images/' + item.img;
   imgElement.alt = item.name;
   imgElement.id = item.img.split('.')[0];
   imgElement.style.position = 'absolute';
@@ -137,7 +137,7 @@ function updateInventory() {
 
       let imgCell = document.createElement('td');
       let img = document.createElement('img');
-      img.src = '../../assets/' + item.img;
+      img.src = '../../assets/images/' + item.img;
       // img.width = 50;
       // check if image's height or width is greater than 50
       if (img.height > img.width) {
