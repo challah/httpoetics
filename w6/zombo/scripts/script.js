@@ -11,7 +11,7 @@ let centerX = 200;
 let centerY = 200;
 
 function preload() {
-  zombo = loadSound('../../../assets/audio/zombo.mp3');
+  zombo = loadSound('http://jordanne.ca/httpoetics/assets/audio/zombo.mp3');
 }
 
 function setup() {
