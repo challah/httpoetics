@@ -118,4 +118,5 @@ canvas {
 
 #zombo-header {
   margin: 1rem;
+  max-width: 800px;
 }
